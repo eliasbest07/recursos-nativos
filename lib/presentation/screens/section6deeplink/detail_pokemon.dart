@@ -52,7 +52,7 @@ class _PokemonView extends StatelessWidget {
               onPressed: () {
                 // link = deeLink
                 SharePlugin.shareLink(
-                    pokemon.sprinteFront, 'mira este pokemon');
+                   'https://deep-link-app-web-production.up.railway.app/pokemons/${pokemon.id}/', 'Mira este pokemon');
               },
               icon: const Icon(Icons.share))
         ],

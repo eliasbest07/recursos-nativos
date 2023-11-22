@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:riverpod_recursos_nativos/presentation/screens/biomtrics/biometrics_screen.dart';
 import 'package:riverpod_recursos_nativos/presentation/screens/screens.dart';
 import 'package:riverpod_recursos_nativos/presentation/screens/section6deeplink/detail_pokemon.dart';
 import 'package:riverpod_recursos_nativos/presentation/screens/sensors/accelerometer_screen.dart';
@@ -48,5 +49,8 @@ final appRouter = GoRouter(
                 return DetailPokemons(pokemonID: id);
               },
             )
-          ])
+          ]),
+        GoRoute(
+          path: '/biometrics',
+          builder: (context, state) => const BiometricsScreen()),
     ]);

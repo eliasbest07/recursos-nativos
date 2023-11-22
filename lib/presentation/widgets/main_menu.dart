@@ -35,6 +35,11 @@ final menuItems = <MenuItem>[
       title: 'Pokemons',
       icon: Icons.browse_gallery_sharp,
       router: '/pokemons'),
+      MenuItem(
+      title: 'Pokemons',
+      icon: Icons.fingerprint,
+      router: '/biometrics'),
+      
 ];
 
 class ManiMenu extends StatelessWidget {

@@ -11,7 +11,7 @@ class PokemonScreen extends ConsumerWidget {
     final pokemonAsync = ref.watch(pokemonNameProvider(pokemonId));
     final pokemonApi = ref.watch(
         pokemonNameDepProvider); // no trabaja igual que el de arriba, es diferente porque no guarda los valores de la peticion, la peticion se vuelve hacer
-    // ignore: unused_local_variable
+   
     final bool ispokemonApi = pokemonApi.isLoading;
     return Scaffold(
       appBar: AppBar(title: Text('Pokemon: $pokemonId')),
