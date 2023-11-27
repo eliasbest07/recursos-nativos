@@ -1,5 +1,8 @@
 import 'package:go_router/go_router.dart';
 import 'package:riverpod_recursos_nativos/presentation/screens/biomtrics/biometrics_screen.dart';
+import 'package:riverpod_recursos_nativos/presentation/screens/maps/controlled_map_screen.dart';
+import 'package:riverpod_recursos_nativos/presentation/screens/maps/location_screen.dart';
+import 'package:riverpod_recursos_nativos/presentation/screens/maps/map_screen.dart';
 import 'package:riverpod_recursos_nativos/presentation/screens/screens.dart';
 import 'package:riverpod_recursos_nativos/presentation/screens/section6deeplink/detail_pokemon.dart';
 import 'package:riverpod_recursos_nativos/presentation/screens/sensors/accelerometer_screen.dart';
@@ -53,4 +56,16 @@ final appRouter = GoRouter(
         GoRoute(
           path: '/biometrics',
           builder: (context, state) => const BiometricsScreen()),
+
+          GoRoute(
+          path: '/location',
+          builder: (context, state) => const LocationScreen()),
+
+          GoRoute(
+          path: '/maps',
+          builder: (context, state) => const MapScreen()),
+
+          GoRoute(
+          path: '/controlled-map',
+          builder: (context, state) => const ControlledMapScreen()),
     ]);

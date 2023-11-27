@@ -28,7 +28,8 @@ class LocalAuthPlugin {
       final bool didAuthenticate = await auth.authenticate(
           localizedReason: 'Por favor autenticate para continuar',
           options: const AuthenticationOptions(
-              // biometricOnly: true,
+            //para  no permitir el pin 
+              biometricOnly: true,
 
               ));
       return (didAuthenticate, didAuthenticate ? 'Hecho' : 'Cancelado por el ususario ');

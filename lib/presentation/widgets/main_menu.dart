@@ -35,10 +35,19 @@ final menuItems = <MenuItem>[
       title: 'Pokemons',
       icon: Icons.browse_gallery_sharp,
       router: '/pokemons'),
+    
       MenuItem(
-      title: 'Pokemons',
+      title: 'Controlador Mapa',
       icon: Icons.fingerprint,
-      router: '/biometrics'),
+      router: '/controlled-map'),
+      MenuItem(
+      title: 'Mapa',
+      icon: Icons.fingerprint,
+      router: '/maps'),
+      MenuItem(
+      title: 'Location',
+      icon: Icons.fingerprint,
+      router: '/location'),
       
 ];
 

@@ -9,10 +9,10 @@ class PokemonScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final pokemonId = ref.watch(pokemonIdProvider);
     final pokemonAsync = ref.watch(pokemonNameProvider(pokemonId));
-    final pokemonApi = ref.watch(
-        pokemonNameDepProvider); // no trabaja igual que el de arriba, es diferente porque no guarda los valores de la peticion, la peticion se vuelve hacer
-   
-    final bool ispokemonApi = pokemonApi.isLoading;
+    // final pokemonApi = ref.watch(
+    //     pokemonNameDepProvider); // no trabaja igual que el de arriba, es diferente porque no guarda los valores de la peticion, la peticion se vuelve hacer
+
+    // final bool ispokemonApi = pokemonApi.isLoading;
     return Scaffold(
       appBar: AppBar(title: Text('Pokemon: $pokemonId')),
       body: pokemonAsync.when(
